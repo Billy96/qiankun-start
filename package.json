@@ -1,0 +1,20 @@
+{
+  "name": "qiankun-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"yarn dev:main\" \"yarn dev:react\" \"yarn dev:vue\"",
+    "dev:main": "cd main && yarn start",
+    "dev:react": "cd sub-app/react-app && yarn start",
+    "dev:vue": "cd sub-app/vue-app && yarn serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
